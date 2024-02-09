@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(210, 46%, 95%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 541px) {
+  body {
+    padding: 0 10px;
+  }
+}
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  width: 700px;
+  height: 270px;
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(72, 85, 106, 0.3);
+}
+
+.card-img {
+  background-image: url(../assets/img/drawers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-info {
+  position: relative;
+  padding: 30px;
+}
+
+.card-info__text {
+  margin-bottom: 20px;
+}
+
+.text__title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+.text__description {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: hsl(214, 17%, 51%);
+}
+
+.card-info__user-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.user__photo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 100%;
+}
+
+.user__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+.date {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: hsl(214, 17%, 51%);
+}
+
+.share-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  background-color: hsl(210, 46%, 95%);
+  border: none;
+  border-radius: 100%;
+}
+.share-btn:hover {
+  background-color: hsl(214, 17%, 51%);
+  cursor: pointer;
+}
+.share-btn:hover .arrow-icon {
+  fill: hsl(0, 0%, 100%);
+}
+
+.arrow-icon {
+  fill: hsl(214, 17%, 51%);
+}
+
+.tooltip--active {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 200px;
+  height: 45px;
+  padding: 0 20px;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+}
+.tooltip--active .share {
+  font-size: 1.3rem;
+  color: hsl(212, 23%, 69%);
+}
+.tooltip--active .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.tooltip--active .indicator {
+  position: absolute;
+  top: 45px;
+  left: 90px;
+  border: 10px solid;
+  border-color: hsl(217, 19%, 35%) #fff #fff #fff;
+}
+.tooltip--active .btn-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 770px) {
+  .tooltip--active {
+    top: 125px;
+    right: -50px;
+  }
+}
+
+/*# sourceMappingURL=desktop.css.map */
