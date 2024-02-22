@@ -131,6 +131,8 @@ body {
 }
 .tooltip--active .share {
   font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
   color: hsl(212, 23%, 69%);
 }
 .tooltip--active .social-media {
