@@ -1,0 +1,54 @@
+@use 'guide.sass'
+
+// Main Container
+.main-wrapper
+	position: relative
+	grid-template-columns: 1fr
+	grid-template-rows: 1fr 1fr
+	width: 100%
+	height: auto
+	z-index: -5
+
+// Card Image (Top Row)
+.card-img
+	border-radius: 10px 10px 0 0
+
+// Card Text (Bottom Row)
+.card-info
+	@include guide.flexbox(column, space-between, null, null)
+	padding: 20px
+	height: 100%
+
+.text__title
+	margin-bottom: 25px
+	font-size: guide.$md-size
+
+.user__photo
+	height: 40px
+	width: 40px
+
+// If The Tooltip Is Active
+.tooltip--active
+	display: none
+	position: absolute
+	justify-content: space-between
+	align-items: center
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 85px
+	z-index: 5
+	border-radius: 0 0 10px 10px
+	.share
+		font-size: guide.$sm-size
+		color: guide.$grayish-blue
+
+	.social-media
+		@include guide.flexbox(row, center, center, 20px)
+
+	.indicator
+		display: none
+
+	.share-btn
+		display: flex
+		margin: 0
