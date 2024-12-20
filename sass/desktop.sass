@@ -3,7 +3,7 @@
 // Main Container
 .main-wrapper
 	display: grid
-	grid-template-columns:  1fr 1.5fr
+	grid-template-columns: 1fr 1.5fr
 	width: 700px
 	height: 270px
 	font-family: guide.$primary-font
@@ -63,7 +63,7 @@
 	color: guide.$desaturated-dark-blue
 
 // Share Btn
-.share-btn
+.btn
 	@include guide.flexbox(null, center, center)
 	width: 40px
 	height: 40px
@@ -71,6 +71,7 @@
 	background-color: guide.$light-grayish-blue
 	border: none
 	border-radius: 100%
+	z-index: 5
 	&:hover
 		background-color: guide.$desaturated-dark-blue
 		cursor: pointer
@@ -79,7 +80,6 @@
 
 .arrow-icon
 	fill: guide.$desaturated-dark-blue
-
 
 // If The Tooltip Is Active
 .tooltip--active
@@ -92,6 +92,7 @@
 	padding: 0 20px
 	background-color: guide.$very-dark-grayish-blue
 	border-radius: 10px
+	z-index: 1
 	.share
 		font-size: guide.$sm-size
 		text-transform: uppercase
@@ -107,9 +108,6 @@
 		left: 90px
 		border: 10px solid
 		border-color: guide.$very-dark-grayish-blue #fff #fff #fff
-
-	.btn-mobile
-		display: none
 
 @media screen and (min-width: 770px)
 	.tooltip--active

@@ -95,7 +95,7 @@ body {
   color: hsl(214, 17%, 51%);
 }
 
-.share-btn {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,12 +105,13 @@ body {
   background-color: hsl(210, 46%, 95%);
   border: none;
   border-radius: 100%;
+  z-index: 5;
 }
-.share-btn:hover {
+.btn:hover {
   background-color: hsl(214, 17%, 51%);
   cursor: pointer;
 }
-.share-btn:hover .arrow-icon {
+.btn:hover .arrow-icon {
   fill: hsl(0, 0%, 100%);
 }
 
@@ -128,6 +129,7 @@ body {
   padding: 0 20px;
   background-color: hsl(217, 19%, 35%);
   border-radius: 10px;
+  z-index: 1;
 }
 .tooltip--active .share {
   font-size: 1.3rem;
@@ -148,9 +150,6 @@ body {
   left: 90px;
   border: 10px solid;
   border-color: hsl(217, 19%, 35%) #fff #fff #fff;
-}
-.tooltip--active .btn-mobile {
-  display: none;
 }
 
 @media screen and (min-width: 770px) {

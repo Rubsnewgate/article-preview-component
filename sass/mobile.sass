@@ -6,7 +6,7 @@
 	grid-template-columns: 1fr
 	grid-template-rows: 1fr 1fr
 	width: 100%
-	height: auto
+	height: 530px
 	z-index: -5
 
 // Card Image (Top Row)
@@ -27,19 +27,26 @@
 	height: 40px
 	width: 40px
 
+.user__photo.hidden
+	display: none
+
+.user__info.hidden
+	display: none
+
 // If The Tooltip Is Active
 .tooltip--active
 	display: none
 	position: absolute
-	justify-content: space-between
+	justify-content: flex-start
 	align-items: center
 	bottom: 0
 	left: 0
 	width: 100%
-	height: 85px
-	z-index: 5
+	height: 80px
+	z-index: -1
 	border-radius: 0 0 10px 10px
 	.share
+		margin-right: 4.5rem
 		font-size: guide.$sm-size
 		color: guide.$grayish-blue
 
@@ -48,7 +55,3 @@
 
 	.indicator
 		display: none
-
-	.share-btn
-		display: flex
-		margin: 0
